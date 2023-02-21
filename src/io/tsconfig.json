@@ -1,0 +1,25 @@
+{
+  "references": [{ "path": "../core" },{"path":"../databases"}],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "../",
+    "rootDirs": [],
+    "composite": true,
+    "types": ["node","crystal-compressor","dved","zeneithdb"],
+    "outDir": "../../compiled/raw/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@core/*": ["../core/*"],
+      "@databases/*": ["../databases/*"],
+      "@messages/*": ["./types/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  }
+}

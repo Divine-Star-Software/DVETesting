@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "../",
+    "rootDirs": [],
+    "composite": true,
+    "types": [
+      "crystal-compressor",
+      "divine-voxel-engine",
+      "divine-binary-tags",
+      "divine-rng"
+    ],
+    "outDir": "../../compiled/raw/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@core/*": ["./*"],
+      "@drng/*": ["./libs/DRNG/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  }
+}

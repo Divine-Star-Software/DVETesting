@@ -1,0 +1,27 @@
+{
+  "references": [
+    { "path": "../../../src/core" },
+    { "path": "../../../src/io" }
+],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "rootDir": "./",
+    "rootDirs": [],
+    "composite": true,
+    "types": ["node","electron"],
+    "outDir": "../backend",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@dved/*": ["./io/libs/DVED/*"],
+      "@messages/*": ["../../../src/io/types/*"],
+
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "sources": [
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/DVE/dev",
+      "fileExtensions": [
+        "DVE_ENV"
+      ],
+      "id": "dev-env-dev"
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/DVE/prod",
+      "fileExtensions": [
+        "DVE_ENV"
+      ],
+      "id": "dev-env-prod"
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/src/",
+      "fileExtensions": [
+        "css"
+      ],
+      "id": "raw-css"
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/compiled/raw/",
+      "fileExtensions": [
+        "js"
+      ],
+      "id": "raw-src"
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/build/dev/client",
+      "fileExtensions": [
+        "js",
+        "map",
+        "ECD"
+      ],
+      "id": "dev-client-final"
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/build/prod/client",
+      "fileExtensions": [
+        "js",
+        "map",
+        "ECD"
+      ],
+      "id": "prod-client-final"
+    }
+  ],
+  "outputs": [
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/debug/electron/app/",
+      "sourceID": "dev-env-dev",
+      "codeSection": "all",
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/dist/browser/",
+      "sourceID": "dev-env-prod",
+      "codeSection": "all",
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/compiled/prod/",
+      "sourceID": "raw-css",
+      "codeSection": "all",
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/compiled/dev/",
+      "sourceID": "raw-css",
+      "codeSection": "all",
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/compiled/raw/",
+      "sourceID": "raw-css",
+      "codeSection": "all",
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/compiled/dev/",
+      "sourceID": "raw-src",
+      "codeSection": [
+        "dev"
+      ],
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/compiled/prod/",
+      "sourceID": "raw-src",
+      "codeSection": [
+        "prod"
+      ],
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/debug/electron/app/DVE/",
+      "sourceID": "dev-client-final",
+      "codeSection": "all",
+      "keepComments": true
+    },
+    {
+      "dir": "D:/DSSoftware/TESTS/DVETesting/dist/browser/DVE/",
+      "sourceID": "prod-client-final",
+      "codeSection": "all",
+      "keepComments": true
+    }
+  ],
+  "codeSections": {
+    "dev": {
+      "start": "@ds-dev-start",
+      "end": "@ds-dev-end"
+    },
+    "prod": {
+      "start": "@ds-prod-start",
+      "end": "@ds-prod-end"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.pick-list {
+  height: 100%;
+}
+
+.pick-list-item {
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  color: var(--font-color);
+  width: 90%;
+  margin-bottom: 30px;
+}
+.pick-list-item.active  {
+  background-color: var(--font-color);
+}
+.pick-list-item.active .pick-list-description,
+.pick-list-item.active .pick-list-title {
+  color: var(--main-dark);
+}
+
+.pick-list-data {
+  padding: 5px;
+}
+
+.pick-list-buttons {
+  display: flex;
+  border-top: 1px solid var(--secondary-dark);
+}
+
+.pick-list-button {
+  display: inline;
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.pick-list-button:hover {
+  background: var(--font-color);
+  color: var(--main-dark);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pick-list-title {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}
+
+.pick-list-description {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}

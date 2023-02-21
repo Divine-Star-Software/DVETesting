@@ -1,0 +1,35 @@
+{
+  "name": "dve-testing",
+  "version": "0.0.1",
+  "description": "DVE Testing",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --config webpack.config.dev",
+    "build-prod": "webpack --config webpack.config.production"
+  },
+  "author": "Divine Star LLC",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
+    "ttypescript": "^1.5.15",
+    "typescript-transform-paths": "^3.4.6",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.47.1",
+    "crystal-compressor": "^0.0.4",
+    "crystalline-state": "^0.0.2",
+    "divine-audio-engine": "^0.0.36",
+    "divine-rng": "^0.0.0",
+    "divine-voxel-engine": "^1.2.56",
+    "ds-element-tree": "^0.0.9",
+    "dve-plugins-iwg": "^0.0.42",
+    "dve-plugins-physics": "^0.0.2",
+    "dve-plugins-player": "^0.0.14",
+    "dved": "^0.0.42",
+    "simloop": "^0.0.5",
+    "starcom": "^0.0.0"
+  }
+}

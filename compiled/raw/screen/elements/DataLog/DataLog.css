@@ -1,0 +1,33 @@
+.data-log-item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30% 70%;
+  margin: 0;
+  padding: 0;
+}
+.data-log-key {
+  margin: 0;
+  padding: auto;
+  font-weight: bold;
+  background-color: var(--main-dark);
+  border: 1px solid var(--font-color);
+}
+.data-log-key p,
+.data-log-value p {
+  text-align: center;
+  line-height: 30px;
+}
+.data-log-value {
+  margin: 0;
+  padding: auto;
+  font: 400;
+  background-color: var(--input-background);
+  border: 1px solid var(--font-color);
+}
+.data-log {
+  margin: 0;
+  padding: 0;
+  color: var(--font-color);
+  width: 100%;
+  font-size: 15px;
+}

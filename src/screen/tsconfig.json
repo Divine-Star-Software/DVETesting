@@ -1,0 +1,37 @@
+{
+  "references": [{ "path": "../core" }, { "path": "../client" }],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "../",
+    "rootDirs": [],
+    "composite": true,
+    "outDir": "../../compiled/raw/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": false,
+    "baseUrl": "./",
+    "types": [
+      "divine-audio-engine",
+      "ds-element-tree",
+      "crystalline-state",
+      "divine-voxel-engine",
+      "dve-plugins-player"
+    ],
+    "paths": {
+      "@data/*": ["../core/data/*"],
+      "@clientData/*": ["../core/data/client/*"],
+      "@sharedData/*": ["../core/data/shared/*"],
+      "@core/*": ["../core/*"],
+      "@state/*": ["../core/libs/STATE/*"],
+      "@dve/*": ["../core/libs/DVE/*"],
+      "@dbt/*": ["../core/libs/DVE/Libs/DivineBinaryTags/*"],
+      "@pm/*": ["../client/Shared/Player/*"],
+      "@client/*": ["../client/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  }
+}

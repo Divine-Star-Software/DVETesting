@@ -1,0 +1,26 @@
+{
+  "references": [{ "path": "../../core" }],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "../",
+    "rootDirs": [],
+    "types": ["node","crystal-compressor"],
+    "outDir": "../../compiled/raw/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@data/*": ["../../data/*"],
+      "@clientData/*": ["../../data/client/*"],
+      "@sharedData/*": ["../../data/shared/*"],
+      "@core/*": ["../../core/*"],
+      "@dve/*": ["../../core/libs/DVE/*"],
+      "@dbt/*": ["../../core/libs/DVE/Libs/DivineBinaryTags/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  }
+}
