@@ -11,7 +11,7 @@
       "divine-binary-tags",
       "divine-rng"
     ],
-    "outDir": "../../compiled/raw/",
+    "outDir": "../../compiled/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",

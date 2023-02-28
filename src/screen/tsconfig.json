@@ -1,37 +1,56 @@
 {
-  "references": [{ "path": "../core" }, { "path": "../client" }],
+  "references": [
+    { "path": "../core" },
+    { "path": "../assets" },
+    { "path": "../audio" },
+    { "path": "../io" },
+    { "path": "../commands" },
+    { "path": "../databases" },
+    { "path": "../system" },
+    { "path": "../client" }
+  ],
+
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
     "rootDir": "../",
     "rootDirs": [],
     "composite": true,
-    "outDir": "../../compiled/raw/",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": false,
-    "baseUrl": "./",
     "types": [
-      "divine-audio-engine",
-      "ds-element-tree",
-      "crystalline-state",
+      "crystal-compressor",
+      "simloop",
+      "divine-binary-object",
       "divine-voxel-engine",
-      "dve-plugins-player"
+      "dve-plugins-iwg",
+      "dve-plugins-physics",
+      "crystalline-state",
+      "dve-plugins-player",
+      "elmtree"
     ],
+    "outDir": "../../compiled/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
     "paths": {
       "@data/*": ["../core/data/*"],
       "@clientData/*": ["../core/data/client/*"],
       "@sharedData/*": ["../core/data/shared/*"],
       "@core/*": ["../core/*"],
-      "@state/*": ["../core/libs/STATE/*"],
-      "@dve/*": ["../core/libs/DVE/*"],
-      "@dbt/*": ["../core/libs/DVE/Libs/DivineBinaryTags/*"],
-      "@pm/*": ["../client/Shared/Player/*"],
-      "@client/*": ["../client/*"]
+      "@assets/*": ["../assets/*"],
+      "@audio/*": ["../audio/*"],
+      "@commands/*": ["../commands/*"],
+      "@databases/*": ["../databases/*"],
+      "@state/*": ["../client/state/*"],
+      "@system/*": ["../system/*"],
+      "@client/*": ["../client/*"],
+      "@screen/*": ["./*"],
+      "@Components/*": ["./Components/*"]
     },
     "plugins": [{ "transform": "typescript-transform-paths" }],
     "strict": true,
     "strictPropertyInitialization": false,
     "skipLibCheck": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "noImplicitAny": false
   }
 }

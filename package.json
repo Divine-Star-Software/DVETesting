@@ -1,7 +1,7 @@
 {
   "name": "dve-testing",
   "version": "0.0.1",
-  "description": "DVE Testing",
+  "description": "Dream Space Infinite",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,15 +20,15 @@
   "dependencies": {
     "@babylonjs/core": "^5.47.1",
     "crystal-compressor": "^0.0.4",
-    "crystalline-state": "^0.0.2",
+    "crystalline-state": "^0.0.45",
     "divine-audio-engine": "^0.0.36",
     "divine-rng": "^0.0.0",
     "divine-voxel-engine": "^1.2.56",
-    "ds-element-tree": "^0.0.9",
     "dve-plugins-iwg": "^0.0.42",
     "dve-plugins-physics": "^0.0.2",
     "dve-plugins-player": "^0.0.14",
     "dved": "^0.0.42",
+    "elmtree": "^0.0.1",
     "simloop": "^0.0.5",
     "starcom": "^0.0.0"
   }

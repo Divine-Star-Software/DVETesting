@@ -1,0 +1,116 @@
+/*
+Side Menu
+*/
+.main-menu {
+  border-right: 3px inset var(--secondary);
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background-color: var(--main-dark);
+}
+.main-menu .menu-title {
+  border-bottom: 3px inset var(--secondary);
+  background-color: var(--main-dark);
+  color: var(--font-color-dark);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding: 2px;
+}
+
+.main-menu .menu-button {
+  border-bottom: 3px inset var(--secondary);
+  color: var(--font-color);
+  transition: 0.5s;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 3px;
+  letter-spacing: 4px;
+}
+
+.main-menu .menu-button:hover {
+  background-color: var(--font-color);
+  color: var(--main);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-menu .menu-button.active {
+  background-color: var(--font-color);
+  color: var(--main);
+  transition: 0.5s;
+}
+
+.main-menu .sub-menu-button {
+  border-bottom: 3px inset var(--secondary);
+  color: var(--font-color);
+  transition: 0.5s;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px;
+  letter-spacing: 4px;
+}
+
+.main-menu .sub-menu-button:hover {
+  background-color: var(--font-color);
+  color: var(--main);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main-menu .sub-menu-button.active {
+  background-color: var(--font-color);
+  color: var(--main);
+  transition: 0.5s;
+}
+
+.main-menu .sub-menu-section {
+  border-bottom: 3px inset var(--secondary);
+}
+
+.main-menu .sub-menu-section.inactive {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.main-menu .sub-menu-section.active {
+  max-height: 15em;
+  transition: 1s;
+}
+
+.main-menu .sub-menu-section.inactive .sub-menu-button {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.main-menu .sub-menu-section.active .sub-menu-button {
+  max-height: 15em;
+  transition: 1s;
+}
+
+.ds-logo-container {
+  margin: auto;
+}
+.ds-menu-logo {
+  fill: var(--secondary);
+  animation: spin 8s linear infinite;
+  text-align: center;
+  position: relative;
+}
+.ds-logo svg {
+  fill: var(--secondary);
+
+  stroke-width: 2;
+  animation: spin 8s linear infinite;
+  text-align: center;
+  position: relative;
+  left: calc(50% - 75px);
+}
+
+.ds-title {
+  text-align: center;
+  color: var(--font-color);
+}

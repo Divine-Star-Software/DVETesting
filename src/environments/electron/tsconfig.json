@@ -9,7 +9,7 @@
     "rootDir": "../",
     "rootDirs": [],
     "types": ["dved","divine-voxel-engine"],
-    "outDir": "../../../compiled/raw/environments/",
+    "outDir": "../../../compiled/environments/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",

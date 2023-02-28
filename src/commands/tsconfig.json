@@ -12,7 +12,7 @@
     "rootDirs": [],
     "composite": true,
     "types": ["starcom", "divine-binary-object", "dve-plugins-player"],
-    "outDir": "../../compiled/raw/",
+    "outDir": "../../compiled/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "",

@@ -1,0 +1,66 @@
+.main-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.main-screen-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.ecd-main-title {
+  color: var(--secondary-dark);
+  text-align: center;
+  font-size: 5vw;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+.ecd-main-version {
+  color: var(--secondary-dark);
+  text-align: center;
+  font-size: 3vw;
+  animation: glow 5s ease-in-out infinite alternate;
+}
+.main-screen-contents {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 800px;
+  max-height: 800px;
+  border-radius: 3px;
+}
+.main-start-button {
+  display: block;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  font-size: 4vw;
+  font-family: var(--font-family);
+
+  color: var(--secondary-dark);
+
+  border: 0px;
+
+  animation: glow 10s ease-in-out infinite alternate;
+  box-shadow: var(--box-shadow);
+  background: none;
+  transition: 0.5s;
+}
+
+.main-start-button:hover {
+  color: var(--secondary);
+  transition: 0.5s;
+  cursor: pointer;
+}

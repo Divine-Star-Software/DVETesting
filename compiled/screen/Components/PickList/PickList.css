@@ -1,0 +1,72 @@
+.pick-list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pick-list-item {
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  color: var(--font-color);
+
+  margin-bottom: 30px;
+  width: 95%;
+}
+.pick-list-item.active {
+  background-color: var(--font-color);
+}
+.pick-list-item.active .pick-list-description,
+.pick-list-item.active .pick-list-title {
+  color: var(--main-dark);
+}
+
+.pick-list-data {
+  padding: 5px;
+}
+
+.pick-list-buttons {
+  display: flex;
+  border-top: 1px solid var(--secondary-dark);
+}
+
+.pick-list-image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  image-rendering: pixelated;
+}
+
+.pick-list-button {
+  display: inline;
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.pick-list-button:hover {
+  background: var(--font-color);
+  color: var(--main-dark);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pick-list-title {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}
+
+.pick-list-description {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}

@@ -2,10 +2,10 @@ const path = require("path");
 module.exports = {
   mode: "development",
   target: "web",
-  entry: "./compiled/dev/client/index.js",
+  entry: "./compiled/client/index.js",
   output: {
     filename: "DVE.js",
-    path: path.resolve(__dirname, "build/dev/client"),
+    path: path.resolve(__dirname, "debug/electron/app/DVE"),
   },
   externals: {
     worker_threads: "commonjs worker_threads",

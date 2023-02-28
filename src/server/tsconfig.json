@@ -6,7 +6,7 @@
     "rootDir": "../",
     "rootDirs": [],
     "types": ["node","crystal-compressor"],
-    "outDir": "../../compiled/raw/",
+    "outDir": "../../compiled/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",

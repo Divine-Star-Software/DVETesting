@@ -1,0 +1,72 @@
+.save-screen-list .item-list-button {
+  padding: 10px;
+  color: var(--font-color);
+  display: block;
+  border: 3px inset var(--secondary);
+  background-color: var(--main-dark);
+  transition: 0.5s;
+  box-shadow: var(--box-shadow);
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: var(--font-family);
+}
+.save-screen-list .item-list-button:hover {
+  cursor: pointer;
+  color: var(--main-dark);
+  background-color: var(--secondary);
+  transition: 0.5s;
+}
+.save-screen-list .item-list-title {
+  font-size: 25px;
+  padding: 10px;
+}
+.save-screen-list .item-list-description {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.new-save-button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  min-width: 100px;
+  background-color: var(--main);
+  border: 4px inset var(--secondary);
+  background: var(--main-dark);
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  margin: 25px;
+  font-size: 30px;
+  transition: 0.5s;
+  box-shadow: var(--box-shadow);
+  letter-spacing: 4px;
+}
+
+.new-save-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--main-dark);
+  transition: 0.5s;
+}
+.confirm-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.confirm-screen form {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 500px;
+}
+.confirm-screen h1 {
+  text-align: center !important;
+}

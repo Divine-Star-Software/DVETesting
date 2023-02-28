@@ -6,7 +6,7 @@ module.exports = {
   entry: "./compiled/prod/client/index.js",
   output: {
     filename: "DVE.js",
-    path: path.resolve(__dirname, "build/prod/client"),
+    path: path.resolve(__dirname, "debug/electron/app/PROD"),
   },
   externals: {
     worker_threads: "commonjs worker_threads",

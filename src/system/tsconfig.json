@@ -1,0 +1,23 @@
+{
+  "references": [],
+
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "../",
+    "rootDirs": [],
+    "composite": true,
+    "types": [],
+    "outDir": "../../compiled/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {},
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false
+  }
+}

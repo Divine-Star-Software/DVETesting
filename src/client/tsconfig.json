@@ -7,7 +7,7 @@
     { "path": "../io" },
     { "path": "../commands" },
     { "path": "../databases" },
-    { "path": "../state" }
+    { "path": "../system" }
   ],
 
   "compilerOptions": {
@@ -24,9 +24,9 @@
       "dve-plugins-iwg",
       "dve-plugins-physics",
       "crystalline-state",
-      "dve-plugins-player",
+      "dve-plugins-player"
     ],
-    "outDir": "../../compiled/raw/",
+    "outDir": "../../compiled/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
@@ -40,14 +40,17 @@
       "@audio/*": ["../audio/*"],
       "@commands/*": ["../commands/*"],
       "@databases/*": ["../databases/*"],
-      "@state/*": ["../state/client/*"],
-      "@client/*": ["./*"]
+      "@state/*": ["./state/*"],
+      "@client/*": ["./*"],
+      "@system/*": ["../system/*"],
+      "@gen/*": ["../core/Gen/*"]
+
     },
     "plugins": [{ "transform": "typescript-transform-paths" }],
     "strict": true,
     "strictPropertyInitialization": false,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    "noImplicitAny": false,
+    "noImplicitAny": false
   }
 }

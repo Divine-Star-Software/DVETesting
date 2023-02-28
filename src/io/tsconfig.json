@@ -7,7 +7,7 @@
     "rootDirs": [],
     "composite": true,
     "types": ["node","crystal-compressor","dved","zeneithdb"],
-    "outDir": "../../compiled/raw/",
+    "outDir": "../../compiled/",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",

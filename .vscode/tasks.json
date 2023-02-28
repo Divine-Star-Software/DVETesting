@@ -18,10 +18,9 @@
         "assets-compile",
         "audio-compile",
         "commands-compile",
-        "dsst-src",
         "build-dev",
         "databases-compile",
-        "state-compile"
+        "dsst-src"
       ],
 
       // Mark as the default build task so cmd/ctrl+shift+b will create them
@@ -45,20 +44,25 @@
         "commands-compile",
         "databases-compile",
         "electron-compile",
-        "io-compile",
-        "state-compile"
+        "io-compile"
       ],
 
       // Mark as the default bu ild task so cmd/ctrl+shift+b will create them
       "group": {
         "kind": "build",
         "isDefault": true
-      },
+      }
     },
     {
       "label": "build-dev",
       "type": "shell",
       "command": "npm run build-dev",
+      "isBackground": true
+    },
+    {
+      "label": "dsst-src",
+      "type": "shell",
+      "command": "dsst -c .srcdsconfig -a",
       "isBackground": true
     },
     {
@@ -77,12 +81,6 @@
       "label": "backend-compile",
       "type": "shell",
       "command": "cd dist/electron/src; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "state-compile",
-      "type": "shell",
-      "command": "cd src/state; ttsc --watch",
       "isBackground": true
     },
     {
@@ -145,13 +143,6 @@
       "command": "cd src/io; ttsc --watch",
       "isBackground": true
     },
-    {
-      "label": "dsst-src",
-      "type": "shell",
-      "command": "dsst -c .srcdsconfig -a",
-      "isBackground": true
-    },
-
     {
       "label": "screen-compile",
       "type": "shell",

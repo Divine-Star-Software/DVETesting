@@ -1,0 +1,8 @@
+{
+    "task.allowAutomaticTasks": "on",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/compiled": true,
+        "**/debug": true,
+      }
+}

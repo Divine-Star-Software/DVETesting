@@ -1,0 +1,11 @@
+.world-loading-data {
+  color: var(--secondary);
+  top: 85%;
+  left: 50%;
+  position: absolute;
+  width: 500px;
+  transform: translate(-50%, -50%);
+}
+.data-log-title {
+  font-weight: bold;
+}

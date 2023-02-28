@@ -1,0 +1,73 @@
+.voxel-list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.voxel-list-item {
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  color: var(--font-color);
+
+  margin-bottom: 30px;
+  width: 95%;
+}
+.voxel-list-item.active {
+  background-color: var(--font-color);
+}
+.voxel-list-item.active .voxel-list-description,
+.voxel-list-item.active .voxel-list-title {
+  color: var(--main-dark);
+}
+
+.voxel-list-data {
+  padding: 5px;
+}
+
+.voxel-list-buttons {
+  display: flex;
+  border-top: 1px solid var(--secondary-dark);
+}
+
+.voxel-list-image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  image-rendering: pixelated;
+}
+
+.voxel-list-button {
+  display: inline;
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.voxel-list-button:hover {
+  background: var(--font-color);
+  color: var(--main-dark);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.voxel-list-title {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+  text-align: center;
+}
+
+.voxel-list-description {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}
