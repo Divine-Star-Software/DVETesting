@@ -10,18 +10,7 @@
   "tasks": [
     {
       "label": "Project Startup",
-      "dependsOn": [
-        "electron",
-        "client-compile",
-        "screen-compile",
-        "core-compile",
-        "assets-compile",
-        "audio-compile",
-        "commands-compile",
-        "build-dev",
-        "databases-compile",
-        "dsst-src"
-      ],
+      "dependsOn": ["electron", "build-dev", "src-compile", "dsst-src"],
 
       // Mark as the default build task so cmd/ctrl+shift+b will create them
       "group": {
@@ -31,26 +20,6 @@
       // Try start the task on folder open
       "runOptions": {
         "runOn": "folderOpen"
-      }
-    },
-    {
-      "label": "Compile All",
-      "dependsOn": [
-        "client-compile",
-        "screen-compile",
-        "core-compile",
-        "assets-compile",
-        "audio-compile",
-        "commands-compile",
-        "databases-compile",
-        "electron-compile",
-        "io-compile"
-      ],
-
-      // Mark as the default bu ild task so cmd/ctrl+shift+b will create them
-      "group": {
-        "kind": "build",
-        "isDefault": true
       }
     },
     {
@@ -78,75 +47,15 @@
       "isBackground": true
     },
     {
-      "label": "backend-compile",
+      "label": "electron-compile",
       "type": "shell",
       "command": "cd dist/electron/src; ttsc --watch",
       "isBackground": true
     },
     {
-      "label": "databases-compile",
+      "label": "src-compile",
       "type": "shell",
-      "command": "cd src/databases; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "server-compile",
-      "type": "shell",
-      "command": "cd src/server; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "client-compile",
-      "type": "shell",
-      "command": "cd src/client; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "electron-compile",
-      "type": "shell",
-      "command": "cd src/environments/electron; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "browser-compile",
-      "type": "shell",
-      "command": "cd src/environments/browser; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "core-compile",
-      "type": "shell",
-      "command": "cd src/core; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "commands-compile",
-      "type": "shell",
-      "command": "cd src/commands; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "assets-compile",
-      "type": "shell",
-      "command": "cd src/assets; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "audio-compile",
-      "type": "shell",
-      "command": "cd src/audio; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "io-compile",
-      "type": "shell",
-      "command": "cd src/io; ttsc --watch",
-      "isBackground": true
-    },
-    {
-      "label": "screen-compile",
-      "type": "shell",
-      "command": "cd src/screen; ttsc --watch",
+      "command": "cd src; ttsc --watch",
       "isBackground": true
     }
   ]

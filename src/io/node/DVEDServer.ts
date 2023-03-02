@@ -1,4 +1,4 @@
-import { DVEDMessages } from "@messages/DVEDMessage.types";
+import { DVEDMessages } from "../types/DVEDMessage.types";
 import * as fs from "fs";
 import { DVED } from "dved/Node/";
 

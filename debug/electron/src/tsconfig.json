@@ -1,8 +1,5 @@
 {
-  "references": [
-    { "path": "../../../src/core" },
-    { "path": "../../../src/io" }
-],
+
   "compilerOptions": {
     "target": "ESNext",
     "module": "CommonJS",
@@ -15,8 +12,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {
-      "@dved/*": ["./io/libs/DVED/*"],
-      "@messages/*": ["../../../src/io/types/*"],
+
 
     },
     "plugins": [{ "transform": "typescript-transform-paths" }],
